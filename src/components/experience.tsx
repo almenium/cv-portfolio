@@ -16,19 +16,9 @@ export function Experience() {
     },
     {
       id: 2,
-      title: "Programmeuse Analyste",
-      company: "MODE83",
-      period: "2019 — 2020",
-      description: [
-        "Participation à des projets de développement et de maintenance d’applications.",
-        "Montée en compétences sur les bonnes pratiques de développement web.",
-      ],
-    },
-    {
-      id: 3,
       title: "Développeuse Web (Stage)",
       company: "L’Encre Noire",
-      period: "Décembre 2018",
+      period: "Octobre 2019 - Novembre 2019",
       description: [
         "Développement front-end (React JS) pour un site vitrine.",
         "Mise en place d’une carte interactive OpenStreetMap.",
@@ -36,7 +26,7 @@ export function Experience() {
       ],
     },
     {
-      id: 4,
+      id: 3,
       title: "Télé-gestionnaire",
       company: "Domus Vie Quotidienne",
       period: "Juin 2010 — Octobre 2019",
