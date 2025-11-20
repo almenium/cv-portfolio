@@ -4,31 +4,34 @@ export function Contact() {
   return (
     <section id="contact" className="scroll-mt-8">
       <div className="flex items-center gap-3 mb-6">
-        <Mail className="w-6 h-6 text-[#2563EB]" />
+        <Mail className="w-6 h-6 text-[#C44536]" />
         <h2 className="text-3xl text-[#1A1A1D]">Contact</h2>
       </div>
-
+      
       <div className="bg-white rounded-xl shadow-lg p-8 border-t-4 border-[#1F3A5F]">
-        <p className="text-[#4B5563] mb-8">
+        <p className="text-[#393E46] mb-8">
           Intéressé·e par une collaboration ou un poste en full remote ? N&apos;hésitez pas à me
           contacter, je vous répondrai avec plaisir.
         </p>
-
+        
         <div className="grid sm:grid-cols-2 gap-6">
-          <div className="flex items-center gap-3 text-[#111827]">
-            <div className="bg-[#2563EB] p-3 rounded-lg">
+          <div className="flex items-center gap-3 text-[#393E46]">
+            <div className="bg-[#1F3A5F] p-3 rounded-lg">
               <Mail className="w-5 h-5 text-white" />
             </div>
             <div>
               <p className="text-sm text-[#6B7280]">Email</p>
-              <a href="mailto:alexia.menier.83@gmail.com" className="hover:underline">
+              <a
+                href="mailto:alexia.menier.83@gmail.com"
+                className="hover:underline"
+              >
                 alexia.menier.83@gmail.com
               </a>
             </div>
           </div>
 
-          <div className="flex items-center gap-3 text-[#111827]">
-            <div className="bg-[#2563EB] p-3 rounded-lg">
+          <div className="flex items-center gap-3 text-[#393E46]">
+            <div className="bg-[#1F3A5F] p-3 rounded-lg">
               <Phone className="w-5 h-5 text-white" />
             </div>
             <div>
@@ -39,8 +42,8 @@ export function Contact() {
             </div>
           </div>
 
-          <div className="flex items-center gap-3 text-[#111827]">
-            <div className="bg-[#2563EB] p-3 rounded-lg">
+          <div className="flex items-center gap-3 text-[#393E46]">
+            <div className="bg-[#1F3A5F] p-3 rounded-lg">
               <Linkedin className="w-5 h-5 text-white" />
             </div>
             <div>
@@ -56,8 +59,8 @@ export function Contact() {
             </div>
           </div>
 
-          <div className="flex items-center gap-3 text-[#111827]">
-            <div className="bg-[#2563EB] p-3 rounded-lg">
+          <div className="flex items-center gap-3 text-[#393E46]">
+            <div className="bg-[#1F3A5F] p-3 rounded-lg">
               <MapPin className="w-5 h-5 text-white" />
             </div>
             <div>
