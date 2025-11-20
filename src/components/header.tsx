@@ -25,7 +25,7 @@ export function Header() {
           télétravail (full remote) sur des projets web ou SaaS.
         </p>
         <a
-          href="/cv-portfolio/cv-alexia-menier.pdf"
+          href="/cv-portfolio/media/cv-alexia-menier.pdf"
           className="bg-[#C44536] text-white px-6 py-3 rounded-lg flex items-center gap-2 hover:bg-[#a83a2c] transition-colors"
         >
           <Download className="w-5 h-5" />
