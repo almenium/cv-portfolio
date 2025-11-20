@@ -1,14 +1,8 @@
 import { Code, Database, Wrench } from "lucide-react";
 
 export function Skills() {
-  const backend = [
+  const webDevSkills = [
     "PHP (4 → 8)",
-    "MSSQL, MySQL, DB2",
-    "Requêtage SQL avancé",
-    "Processus ETL / traitements batch",
-  ];
-
-  const frontend = [
     "JavaScript",
     "HTML / CSS",
     "Bootstrap",
@@ -16,74 +10,81 @@ export function Skills() {
     "Flutter (bases)",
   ];
 
-  const tools = ["Git", "Jira", "AS400 (IBM iSeries)", "Méthodes Agile", "MVP", "UX simple et fluide"];
+  const dataSkills = [
+    "MSSQL",
+    "MySQL",
+    "DB2",
+    "Requêtes SQL avancées",
+    "ETL / traitements batch",
+    "Rapports statistiques",
+  ];
 
-  const softSkills = [
-    "Curiosité",
-    "Créativité",
-    "Autonomie",
-    "Visualisation des solutions",
-    "Gestion du temps",
-    "Communication à distance",
+  const tools = [
+    "Git",
+    "Jira",
+    "AS400 (IBM iSeries)",
+    "Méthodes Agile",
+    "MVP",
+    "UX simple et fluide",
   ];
 
   return (
     <section id="skills" className="scroll-mt-8">
       <div className="flex items-center gap-3 mb-6">
-        <Code className="w-6 h-6 text-[#2563EB]" />
-        <h2 className="text-3xl text-[#1A1A1D]">Compétences</h2>
+        <Code className="w-6 h-6 text-[#C44536]" />
+        <h2 className="text-3xl text-[#1A1A1D]">Compétences & technologies</h2>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-8">
+      <div className="grid md:grid-cols-3 gap-6">
         <div className="bg-white rounded-xl shadow-lg p-6 border-t-4 border-[#1F3A5F]">
           <div className="flex items-center gap-2 mb-4">
-            <Code className="w-5 h-5 text-[#2563EB]" />
-            <h3 className="text-lg font-semibold text-[#111827]">Back-end & Data</h3>
+            <Code className="w-5 h-5 text-[#1F3A5F]" />
+            <h3 className="text-xl text-[#1A1A1D]">Développement Web</h3>
           </div>
-          <ul className="space-y-1 text-[#4B5563]">
-            {backend.map((skill) => (
-              <li key={skill}>• {skill}</li>
+          <div className="flex flex-wrap gap-2">
+            {webDevSkills.map((skill) => (
+              <span
+                key={skill}
+                className="bg-[#1F3A5F] text-white px-3 py-1 rounded-full text-sm"
+              >
+                {skill}
+              </span>
             ))}
-          </ul>
+          </div>
         </div>
 
-        <div className="bg-white rounded-xl shadow-lg p-6 border-t-4 border-[#1F3A5F]">
+        <div className="bg-white rounded-xl shadow-lg p-6 border-t-4 border-[#C44536]">
           <div className="flex items-center gap-2 mb-4">
-            <Wrench className="w-5 h-5 text-[#2563EB]" />
-            <h3 className="text-lg font-semibold text-[#111827]">Front-end & Outils</h3>
+            <Database className="w-5 h-5 text-[#C44536]" />
+            <h3 className="text-xl text-[#1A1A1D]">Données & SQL</h3>
           </div>
-          <ul className="space-y-1 text-[#4B5563]">
-            {frontend.map((skill) => (
-              <li key={skill}>• {skill}</li>
+          <div className="flex flex-wrap gap-2">
+            {dataSkills.map((skill) => (
+              <span
+                key={skill}
+                className="bg-[#C44536] text-white px-3 py-1 rounded-full text-sm"
+              >
+                {skill}
+              </span>
             ))}
-          </ul>
-          <div className="mt-4 flex flex-wrap gap-2">
+          </div>
+        </div>
+
+        <div className="bg-white rounded-xl shadow-lg p-6 border-t-4 border-[#393E46]">
+          <div className="flex items-center gap-2 mb-4">
+            <Wrench className="w-5 h-5 text-[#393E46]" />
+            <h3 className="text-xl text-[#1A1A1D]">Outils & méthodes</h3>
+          </div>
+          <div className="flex flex-wrap gap-2">
             {tools.map((tool) => (
               <span
                 key={tool}
-                className="bg-[#1F3A5F] text-white px-3 py-1 rounded-full text-xs"
+                className="bg-[#393E46] text-white px-3 py-1 rounded-full text-sm"
               >
                 {tool}
               </span>
             ))}
           </div>
-        </div>
-      </div>
-
-      <div className="mt-8 bg-white rounded-xl shadow-lg p-6 border-l-4 border-[#2563EB]">
-        <div className="flex items-center gap-2 mb-3">
-          <Database className="w-5 h-5 text-[#2563EB]" />
-          <h3 className="text-lg font-semibold text-[#111827]">Soft skills</h3>
-        </div>
-        <div className="flex flex-wrap gap-2">
-          {softSkills.map((skill) => (
-            <span
-              key={skill}
-              className="border border-[#E5E7EB] px-3 py-1 rounded-full text-xs text-[#374151]"
-            >
-              {skill}
-            </span>
-          ))}
         </div>
       </div>
     </section>
