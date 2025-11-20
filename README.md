@@ -69,7 +69,7 @@ Chaque push sur `main` déclenche :
 4. Déploiement sur GitHub Pages
 
 Le workflow se trouve ici :  
-→ `.github/workflows/deploy.yml`
+→ `.github/workflows/main.yml`
 
 ---
 
@@ -85,105 +85,10 @@ Le bouton dans le site pointera automatiquement dessus.
 
 ---
 
-# 🧩 **Guide : modifier et personnaliser ce CV**
-
-Tu peux tout modifier **depuis Github.com**, sans terminal, sans Node installé.
-
-### 🔧 1. Modifier les textes
-
-Chaque section se trouve dans :
-
-```
-src/components/
-```
-
-Exemples :
-
-- `header.tsx`
-- `about.tsx`
-- `skills.tsx`
-- `experience.tsx`
-- `projects.tsx`
-- `education.tsx`
-- `contact.tsx`
-
----
-
-### 🎨 2. Modifier les couleurs et styles
-
-Les styles Tailwind sont directement dans les composants :
-
-Exemple :  
-`bg-[#1F3A5F]`, `text-[#C44536]`, `rounded-xl`, `shadow-lg`, `grid`, etc.
-
-Si tu veux changer la palette, je peux t’en générer une nouvelle.
-
----
-
-### 🖼️ 3. Modifier l’image d’aperçu
-
-Dans le README :  
-```md
-![Preview](public/preview.png)
-```
-
-Dépose un fichier dans `public/preview.png`.
-
----
-
-### 📦 4. Modifier la configuration Vite
-
-Dans `vite.config.ts` :
-
-```ts
-base: "/cv-portfolio/",
-build: {
-   outDir: "build",
-}
-```
-
-Ne change **`base`** que si tu renommes ton repo GitHub.
-
----
-
-### 🧪 5. Tester le site en local
-
-Si un jour tu es sur ton PC perso :
-
-```
-npm install
-npm run dev
-```
-
----
-
-### 🌐 6. Ajouter un nouveau projet dans le Portfolio
-
-Dans `src/components/projects.tsx` :
-
-```ts
-const projects = [
-  { id: 1, title: "...", description: "...", technologies: ["..."] },
-];
-```
-
-➡️ Ajouter un projet = ajouter un objet.
-
----
-
-### 📝 7. Ajouter une nouvelle section
-
-1. Créer un fichier `src/components/NomDeSection.tsx`
-2. L’importer et l’ajouter dans `App.tsx`
-
----
-
 # 💬 **Contact**
 
 📧 Email : **alexia.menier.83@gmail.com**  
-📱 Téléphone : **06 15 84 47 42**  
 🔗 LinkedIn : **https://www.linkedin.com/in/alexia-menier-0501**  
-📍 Basée à Fréjus — déménagement prévu vers Chinon
 
 ---
 
