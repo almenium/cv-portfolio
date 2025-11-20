@@ -1,21 +1,11 @@
-import { Briefcase } from "lucide-react";
-
-type ExperienceItem = {
-  id: number;
-  title: string;
-  company: string;
-  location?: string;
-  period: string;
-  description: string[];
-};
+import { Briefcase, Calendar } from "lucide-react";
 
 export function Experience() {
-  const experiences: ExperienceItem[] = [
+  const experiences = [
     {
       id: 1,
       title: "Développeuse Full-Stack PHP / JavaScript",
       company: "Hydro Building System",
-      location: "Puget-sur-Argens",
       period: "Août 2020 — Aujourd'hui",
       description: [
         "Étude et développement d’applications métier (ventes, finance, production).",
@@ -28,7 +18,6 @@ export function Experience() {
       id: 2,
       title: "Programmeuse Analyste",
       company: "MODE83",
-      location: "Draguignan",
       period: "2019 — 2020",
       description: [
         "Participation à des projets de développement et de maintenance d’applications.",
@@ -39,7 +28,6 @@ export function Experience() {
       id: 3,
       title: "Développeuse Web (Stage)",
       company: "L’Encre Noire",
-      location: "Saint-Raphaël",
       period: "Décembre 2018",
       description: [
         "Développement front-end (React JS) pour un site vitrine.",
@@ -51,7 +39,6 @@ export function Experience() {
       id: 4,
       title: "Télé-gestionnaire",
       company: "Domus Vie Quotidienne",
-      location: "Paris",
       period: "Juin 2010 — Octobre 2019",
       description: [
         "Gestion des sinistres habitation et accompagnement des assurés.",
@@ -64,8 +51,8 @@ export function Experience() {
   return (
     <section id="experience" className="scroll-mt-8">
       <div className="flex items-center gap-3 mb-6">
-        <Briefcase className="w-6 h-6 text-[#2563EB]" />
-        <h2 className="text-3xl text-[#1A1A1D]">Expériences</h2>
+        <Briefcase className="w-6 h-6 text-[#C44536]" />
+        <h2 className="text-3xl text-[#1A1A1D]">Expérience professionnelle</h2>
       </div>
 
       <div className="space-y-6">
@@ -74,20 +61,20 @@ export function Experience() {
             key={exp.id}
             className="bg-white rounded-xl shadow-lg p-6 border border-[#E5E7EB]"
           >
-            <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-2 mb-3">
+            <div className="flex items-center justify-between mb-3">
               <div>
-                <h3 className="text-lg font-semibold text-[#111827]">{exp.title}</h3>
-                <p className="text-sm text-[#4B5563]">
-                  {exp.company}
-                  {exp.location ? ` — ${exp.location}` : ""}
-                </p>
+                <h3 className="text-xl text-[#1A1A1D]">{exp.title}</h3>
+                <p className="text-sm text-[#393E46]">{exp.company}</p>
               </div>
-              <p className="text-sm text-[#6B7280]">{exp.period}</p>
+              <div className="flex items-center gap-2 text-sm text-[#6B7280]">
+                <Calendar className="w-4 h-4" />
+                <span>{exp.period}</span>
+              </div>
             </div>
             <ul className="space-y-2">
               {exp.description.map((item, index) => (
-                <li key={index} className="text-[#4B5563] flex gap-2">
-                  <span className="text-[#2563EB] mt-1">•</span>
+                <li key={index} className="text-[#393E46] flex gap-2">
+                  <span className="text-[#C44536] mt-1">•</span>
                   <span>{item}</span>
                 </li>
               ))}
