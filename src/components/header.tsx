@@ -26,6 +26,8 @@ export function Header() {
         </p>
         <a
           href="/cv-portfolio/cv-alexia-menier.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
           className="bg-[#C44536] text-white px-6 py-3 rounded-lg flex items-center gap-2 hover:bg-[#a83a2c] transition-colors"
         >
           <Download className="w-5 h-5" />
