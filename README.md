@@ -16,13 +16,6 @@
 
 ---
 
-## ✨ **Aperçu du Portfolio**
-
-_(Tu peux remplacer l’image par une capture du site si tu veux)_  
-![Preview](https://via.placeholder.com/1200x650?text=Preview+CV+Portfolio)
-
----
-
 ## 👩‍💻 **À propos du projet**
 
 Ce projet est mon **CV interactif** et **Portfolio développeuse**, conçu pour présenter :
